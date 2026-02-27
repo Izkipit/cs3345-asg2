@@ -11,7 +11,9 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public void addLast(T item) {
 		// TODO 
-			
+		Node newNode = new Node(item);
+		tail.next = newNode;
+		numberOfElements++;
 	}
 
 	@Override
@@ -24,13 +26,16 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public T get(int position) {
 		// TODO 
+		Node current = head;
+		for(int i = 0; i < position; i++)
+			current = current.next;
 		return null; 
 	}
 
 	@Override
 	public void print() {
 		// TODO
-				
+		System.out.println("Hello");
 	}
 
 	@Override
@@ -55,7 +60,7 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public int getLength() {
 		// TODO 
-	
+		return 0;
 	}
 	
 	/** 

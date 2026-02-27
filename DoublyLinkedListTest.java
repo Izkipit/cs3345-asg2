@@ -11,7 +11,7 @@ public class DoublyLinkedListTest {
 		// testAddFirstAndGet();
 		// testAddFirstForwards();
 		// testAddFirstBackwards();
-		// testAddLastAndGet();
+		 testAddLastAndGet();
 		// testAddLastForwards();
 		// testAddLastBackwards();
 		// testIsEmpty();
