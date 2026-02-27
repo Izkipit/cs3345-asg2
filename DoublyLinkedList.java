@@ -51,13 +51,22 @@ public class DoublyLinkedList<T> implements List<T> {
 	public void print() {
 		// TODO
 		Node current = head;
-        
+        for(int i = 0; i < numberOfElements; i++) {
+			System.out.print(current.data + " ");
+			current = current.next;
+			System.out.println("Position: " + i);
+		}
 	}
 
 	@Override
 	public void printBackwards() {
 		// TODO 
-		
+		Node current = tail;
+		for(int i = numberOfElements - 1; i >= 0; i--) {
+			System.out.print(current.data + " ");
+			current = current.previous;
+			System.out.println("Position: " + i);
+		}
 	}
 
 	@Override

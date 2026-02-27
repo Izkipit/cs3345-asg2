@@ -30,9 +30,15 @@ public class DoublyLinkedListTest {
 	
 	public static void testPrintEmptyListForward() {
 		//TODO
+		List<String> list = new DoublyLinkedList<String>();
+		System.out.println("You should get an empty list");
+		list.print();
 	}
 	public static void testPrintEmptyListBackward() {
 		//TODO
+		List<String> list = new DoublyLinkedList<String>();
+		System.out.println("You should get an empty list");
+		list.printBackwards();
 	}
 	
 	public static void testEmptyGet() {
