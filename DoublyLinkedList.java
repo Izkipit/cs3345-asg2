@@ -37,6 +37,9 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public T get(int position) {
 		// TODO 
+		if (position < 0 || position >= numberOfElements) {
+			return null; // Position is out of bounds
+		}
 
         Node current = head;
 
@@ -70,7 +73,7 @@ public class DoublyLinkedList<T> implements List<T> {
 			System.out.println("The list is empty");
 			return;
 		}
-		
+
 		Node current = tail;
 		for(int i = numberOfElements - 1; i >= 0; i--) {
 			System.out.print(current.data + " ");
