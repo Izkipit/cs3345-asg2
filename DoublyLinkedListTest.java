@@ -6,7 +6,7 @@ public class DoublyLinkedListTest {
 		// Comment only the test functions you want to run
 		
 		 testPrintEmptyListForward();
-		// testPrintEmptyListBackward();
+		 testPrintEmptyListBackward();
 		// testEmptyGet();
 		// testAddFirstAndGet();
 		// testAddFirstForwards();

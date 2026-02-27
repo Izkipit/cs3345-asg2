@@ -50,6 +50,11 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public void print() {
 		// TODO
+		if(numberOfElements == 0) {
+			System.out.println("The list is empty");
+			return;
+		}
+
 		Node current = head;
         for(int i = 0; i < numberOfElements; i++) {
 			System.out.print(current.data + " ");
@@ -61,6 +66,11 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public void printBackwards() {
 		// TODO 
+		if(numberOfElements == 0) {
+			System.out.println("The list is empty");
+			return;
+		}
+		
 		Node current = tail;
 		for(int i = numberOfElements - 1; i >= 0; i--) {
 			System.out.print(current.data + " ");
