@@ -30,8 +30,16 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public void addFirst(T item) {
 		// TODO 
-		
-			
+		Node newNode = new Node(item);
+		if(isEmpty()) {
+			head = tail = newNode;
+		} 
+		else 
+		{
+			newNode.next = head;
+			head.previous = newNode;
+			head = newNode;
+		}
 	}
 
 	@Override

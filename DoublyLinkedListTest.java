@@ -7,8 +7,8 @@ public class DoublyLinkedListTest {
 		
 		// testPrintEmptyListForward();
 		// testPrintEmptyListBackward();
-		 testEmptyGet();
-		// testAddFirstAndGet();
+		// testEmptyGet();
+		 testAddFirstAndGet();
 		// testAddFirstForwards();
 		// testAddFirstBackwards();
 		// testAddLastAndGet();
