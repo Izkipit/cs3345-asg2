@@ -13,13 +13,9 @@ public class DoublyLinkedList<T> implements List<T> {
 		// TODO 
 		Node newNode = new Node(item);
 
-        if (isEmpty()) {
-            head = tail = newNode;
-        } else {
             tail.next = newNode;
             newNode.previous = tail;
             tail = newNode;
-        }
 
         numberOfElements++;
 	}
@@ -34,9 +30,6 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public T get(int position) {
 		// TODO 
-		if (position < 0 || position >= numberOfElements) {
-            return null;   // matches interface requirement
-        }
 
         Node current = head;
 
