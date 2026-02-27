@@ -40,6 +40,7 @@ public class DoublyLinkedList<T> implements List<T> {
 			head.previous = newNode;
 			head = newNode;
 		}
+		numberOfElements++;
 	}
 
 	@Override
