@@ -13,9 +13,12 @@ public class DoublyLinkedList<T> implements List<T> {
 		// TODO 
 		Node newNode = new Node(item);
 
-        if (isEmpty()) {
-            head = tail = newNode;
-        } else {
+        if (isEmpty()) //Checks if the list is empty before adding the first node
+		{
+            head = tail = newNode; // Adds the first node, must set head and tail equal since the first node is both the head and tail of the list
+        } 
+		else 
+		{
             tail.next = newNode;
             newNode.previous = tail;
             tail = newNode;
