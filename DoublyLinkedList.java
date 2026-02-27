@@ -14,7 +14,7 @@ public class DoublyLinkedList<T> implements List<T> {
 		Node newNode = new Node(item);
 
         if (isEmpty()) {
-            head = tail = newNode;
+            head = newNode;
         } else {
             tail.next = newNode;
             newNode.previous = tail;
