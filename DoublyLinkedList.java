@@ -1,4 +1,5 @@
-public class DoublyLinkedList<T> implements List<T> {
+import java.util.Iterator;
+public class DoublyLinkedList<T> implements List<T>, Iterable<T> {
 	private Node head, tail;
 	private int numberOfElements;
 
@@ -138,6 +139,25 @@ public class DoublyLinkedList<T> implements List<T> {
 	public int getLength() {
 		// TODO 
 		return numberOfElements;
+	}
+
+	@Override
+	public Iterator<T> iterator() {
+
+		return new Iterator<T>() {
+
+			private Node current = head;
+
+			public boolean hasNext() {
+				return current != null;
+			}
+
+			public T next() {
+				T data = current.data;
+				current = current.next;
+				return data;
+			}
+		};
 	}
 	
 	/** 

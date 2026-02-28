@@ -1,4 +1,5 @@
 
+import java.util.Iterator;
 public class DoublyLinkedListTest {
 
 	public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class DoublyLinkedListTest {
 		// testRemoveFromListWithTwoElementPositive();
 		// testRemoveFromListWithThreeElementNegative();
 		// testRemoveFromListWithThreeElementPositive();
-		// testIterator();
+		 testIterator();
 		
 
 	}
@@ -275,18 +276,20 @@ public class DoublyLinkedListTest {
 		
 		System.out.println("");
 		System.out.println("-------------- testIterator ------------:");
-		List<String> list = new DoublyLinkedList<String>();
+		DoublyLinkedList<String> list = new DoublyLinkedList<String>();
 		list.addLast("Apple");
 		list.addLast("Cherry");
 		list.addLast("Banana");
 
 		//TODO	
-                // ADD code to obtain iterator object, then uses it to iterate through the list and print its data.\
+                // ADD code to obtain iterator object, then uses it to iterate through the list and print its data.
+		Iterator<String> iterator = list.iterator();
+
+    	while (iterator.hasNext()) {
+        System.out.println(iterator.next());
+		}
 		
 		System.out.println("-------------- testIterator  ------------:");
 	}
-
-
-
 }
 
