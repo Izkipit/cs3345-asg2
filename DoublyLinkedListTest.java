@@ -8,7 +8,7 @@ public class DoublyLinkedListTest {
 		// testPrintEmptyListForward();
 		// testPrintEmptyListBackward();
 		// testEmptyGet();
-		 testAddFirstAndGet();
+		// testAddFirstAndGet();
 		// testAddFirstForwards();
 		// testAddFirstBackwards();
 		// testAddLastAndGet();
@@ -281,7 +281,7 @@ public class DoublyLinkedListTest {
 		list.addLast("Banana");
 
 		//TODO	
-                // ADD code to obtain iterator object, then uses it to iterate through the list and print its data.
+                // ADD code to obtain iterator object, then uses it to iterate through the list and print its data.\
 		
 		System.out.println("-------------- testIterator  ------------:");
 	}

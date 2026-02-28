@@ -94,7 +94,37 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public boolean remove(T item) {
 		// TODO 
+		if(isEmpty())
+			return false;
 
+		Node current = head;
+		while(!current.data.equals(item) && current.next != null)
+			current = current.next;
+
+		if(current.data.equals(item)) 
+			{
+				if(current == head) // Removes the head of the list
+				{
+					head = current.next;
+					if(head != null) {
+						head.previous = null;
+					}
+				} 
+				else if(current == tail) // Removes the tail of the list
+				{
+					tail = current.previous;
+					if(tail != null) {
+						tail.next = null;
+					}
+				} 
+				else // Removes any node in the middle of the list
+				{
+					current.previous.next = current.next;
+					current.next.previous = current.previous;
+				}
+				numberOfElements--;
+				return true;
+			}
         return false;
 	}
 
